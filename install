@@ -3,3 +3,6 @@ yum install ruby-devel gcc make rpm-build rubygems
 gem install --no-ri --no-rdoc fpm
 
 fpm --version
+
+
+fpm -s dir -t rpm -C <> --name project_name --version 1.0.0 --iteration 1 --depends  redhat_dependency1 --description "A sample package" .
